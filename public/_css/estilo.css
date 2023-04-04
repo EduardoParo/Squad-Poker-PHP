@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com');
+
+body{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1.2em;
+}
+
+*{
+	margin     	 	:0;
+	padding    	 	:0;
+	list-style   	:nome;
+	text-decoration :nome;
+}
+/*Menu Superior
+------------------------------------------*/
+.menuSup{
+	background 	  : #042331;
+	line-height   :50px;
+}
+
+.menuSup #abrirMenu{
+	width: 80px;
+	background 	:  #042331;
+	font-size     : 20px;
+	line-height   :50px;
+	font-size     : 20px;
+	color         : white;
+	padding-left  : 30px;
+	
+
+}
+
+
+/*Secao
+------------------------------------------
+section{
+	font-family:'Roboto', sans-serif;
+	background 				: url(bg.jpg) no-repeat;
+	background-position 	: center;
+	background-size 		: cover;
+	height 					: 160vh;
+	transition 				: all .5s;
+}
+*/

@@ -1,0 +1,49 @@
+<style>
+      .card-ponto  {
+        padding: 0px 0 0 0;
+        width: 40px;
+        margin: 0 auto;
+      }
+    </style>
+
+<div class="container mt-5 mb-5 ">
+    
+    <div class="row mt-5 border-bottom">
+        <div class="col-md-9 ">    
+            <h4  class="" >Pontuação</h4>
+        </div>       
+    </div>
+
+    <div id="cardUsuario" class="row">      
+        <div  class="col-md-2">
+            <!--<div  class="card mt-3">
+                <div class="card-ponto text-center">
+                    FAT
+                </div> --> 
+            </div>
+        </div>
+    </div>
+
+    <div id='btnRevReini' class="row d-flex justify-content-center mt-3">
+        <?php 
+            session_start();
+            if($_SESSION['participante'] == 'espectador' ) { ?>
+                <button id="btnRevelar" class="btn btn-secondary text-white  btn-lg  mr-3 mb-2" onclick="showVotos()"> Revelar Votos </button>
+                <button class="btn btn-warning text-white btn-lg  mb-2" onclick="resetVotos()" > Reiniciar Votos</button>
+        <?php }?>
+    </div>  
+</div>
+
+<div class="container mt-5 mb-5 ">
+    <h4  class="border-bottom" >Usuários online </h4>
+    
+    <div class="container bg-white mt-4 ">
+        <div class="row">
+            <div class="table-responsive  " style="overflow-x: hidden" >
+                <table id= "tabelaDados" class="table table-bordered" >
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

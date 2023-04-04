@@ -1,0 +1,61 @@
+
+    <style>
+      .card-login {
+        padding: 30px 0 0 0;
+        width: 350px;
+        margin: 0 auto;
+      }
+    </style>
+
+<header>
+  <!--Nav Menu -->
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+    <h4 class="text text-white">Squad <span class="text-warning">Poker</span></h4> 
+    </a>
+  </nav>
+</header>
+
+<section>
+  <!--Container-->
+  <div class="container">
+    <!--Row-->
+    <div class="row">
+
+      <div class="card-login">
+        <div class="card">
+          <div class="card-header">
+            Login
+          </div>
+
+          <div class="card-body">
+            <!--Formulario-->
+            <form action="/Poker/autenticar" method="post">
+              
+              <div class="form-group">
+                <input name="nome" type="text" class="form-control" placeholder="Nome">
+              </div>
+
+              <div class="form-group">
+                <input name="squad" type="text" class="form-control" placeholder="Squad">
+                <!--<select class="custom-select" name="squad">
+                  <option value="" selected>Squads</option>
+                  <option value="Fat">Faturamento</option>
+                </select>-->
+              </div>
+
+              <div class="form-group">
+                <select class="custom-select" name="participante">
+                  <option selected>Participante</option>
+                  <option value="espectador">Espectador</option>
+                </select>
+              </div>
+
+              <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
+              
+            </form>
+          
+          </div>
+        </div>
+      </div>
+</section>
